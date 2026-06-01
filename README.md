@@ -26,6 +26,8 @@ This example involves a very small dataset that has been optimized for a quick r
 #### 1. Generate genome annotation file
 We use Prokka to generate genome annotations, including strand information.
 
+The commands below generate annotations for the concatenated genomes. Ideally, each genome should be annotated individually, and the resulting GFF files should then be merged. However, for the purposes of this example, we will generate annotations directly from the concatenated genomes.
+
 `prokka --quiet --kingdom Bacteria --outdir out.dir --locustag genomes --prefix genomes microbes.fa`\
 `sed '/##FASTA/,$d' out.dir/genomes.gff | grep -v "##" > all_gffs.txt`
 

@@ -1,0 +1,24 @@
+name: Pseudouridine_env
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.10
+  - pandas
+
+  # Bioinformatics tools
+  - bwa
+  - samtools
+  - bam-readcount
+  - abra2
+  - prokka
+
+  # Java 8 (required by ABRA2)
+  - openjdk=8
+
+  # R and packages
+  - r-base
+  - r-data.table
+  - r-tidyr
+  - r-dplyr
+  - r-getopt

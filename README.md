@@ -74,6 +74,8 @@ Convert the resulting CSV file to a tab-delimited format for downstream analysis
 `sed 's/,/\t/g' sample.brc_parsed.csv > sample_treated.txt`
 
 #### 6. Post-processing filteration
+Here, we are retrieving only 'A' and 'T' sites with depth >= 20.
+
 For BS-treated samples, run:\
 `awk '$3~/^(T|A)$/ {print $0}' sample_treated.txt | awk '$4 >= 20' | grep -w "del" > sample_treated_filtered.txt`
 

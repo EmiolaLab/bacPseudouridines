@@ -6,8 +6,8 @@ Sharma et al (2026) "Quantitative mapping of pseudouridines in bacterial RNA" *N
 For a detailed protocol, please refer to Sharma et al (2026) "High-throughput profiling of pseudouridines in microbiome-derived bacterial RNA" *Current Protocols*
 
 ### Installing dependencies
-`clone the github page (xxx)`
-
+`clone the github page (git clone https://github.com/EmiolaLab/bacPseudouridines.git)`\
+`cd bacPseudouridines/`\
 `conda env create -f environment.yml`\
 `conda activate Pseudouridine_env`\
 `wget https://raw.githubusercontent.com/sridhar0605/brc-parser/refs/heads/main/brc-parser.py`\
